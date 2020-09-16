@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="drum2.css">
-    <title>Custom Drum</title>
+    <link rel="icon" type="image/png" href="/drum.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Drum Beats</title>
 </head>
+
 <body>
-    
+
     <div class="btns">
         <div class="btn play"> Play </div>
-        <div class=" btn reset" id="pause" >Pause</div>
+        <div class=" btn reset" id="pause">Pause</div>
         <!-- <input type="range" min="100" max="500" value="300"  class="slider btn "  > -->
         <div class="range-wrap">
             <!-- <div class="range-value btn " id="rangeV">300</div> -->
@@ -22,98 +25,260 @@
 
 
     <div class="cover">
-        <div data-key="65" class="key main"> <div class="sound  ">Boom</div> </div>
-        <div data-key="83" class="key  main">  <div class="sound">Clap</div> </div>
-        <div data-key="68" class="key main"> <div class="sound ">Hihat</div> </div>
-        <div data-key="70" class="key main"> <div class="sound ">Kick</div> </div>
-        <div data-key="71" class="key main"> <div class="sound ">OpenHat</div> </div>
-        <div data-key="72" class="key main"> <div class="sound ">Ride</div> </div>
-        <div data-key="74" class="key main"> <div class="sound ">Snare</div> </div>
-        <div data-key="75" class="key main"> <div class="sound ">Tink</div> </div>
-        <div data-key="76" class="key main"> <div class="sound ">Tom</div> </div>
+        <div data-key="65" class="key main">
+            <div class="sound  ">Boom</div>
+        </div>
+        <div data-key="83" class="key  main">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" class="key main">
+            <div class="sound ">Hihat</div>
+        </div>
+        <div data-key="70" class="key main">
+            <div class="sound ">Kick</div>
+        </div>
+        <div data-key="71" class="key main">
+            <div class="sound ">OpenHat</div>
+        </div>
+        <div data-key="72" class="key main">
+            <div class="sound ">Ride</div>
+        </div>
+        <div data-key="74" class="key main">
+            <div class="sound ">Snare</div>
+        </div>
+        <div data-key="75" class="key main">
+            <div class="sound ">Tink</div>
+        </div>
+        <div data-key="76" class="key main">
+            <div class="sound ">Tom</div>
+        </div>
 
         <!-- Buttons Start below -->
 
-        <div data-key="65" data-col="1"  class="key op disabled ">  <div class="sound">Boom</div> </div>
-        <div data-key="83" data-col="1"  class="key op disabled ">   <div class="sound">Clap</div> </div>
-        <div data-key="68" data-col="1"  class="key op disabled ">  <div class="sound">Hihat</div> </div>
-        <div data-key="70" data-col="1"  class="key op disabled ">  <div class="sound">Kick</div> </div>
-        <div data-key="71" data-col="1"  class="key op disabled ">  <div class="sound">OpenHat</div> </div>
-        <div data-key="72" data-col="1"  class="key op disabled ">  <div class="sound">Ride</div> </div>
-        <div data-key="74" data-col="1"  class="key op disabled ">  <div class="sound">Snare</div> </div>
-        <div data-key="75" data-col="1"  class="key op disabled ">  <div class="sound">Tink</div> </div>
-        <div data-key="76" data-col="1"  class="key op disabled ">  <div class="sound">Tom</div> </div>
+        <div data-key="65" data-col="1" class="key op disabled ">
+            <div class="sound">Boom</div>
+        </div>
+        <div data-key="83" data-col="1" class="key op disabled ">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" data-col="1" class="key op disabled ">
+            <div class="sound">Hihat</div>
+        </div>
+        <div data-key="70" data-col="1" class="key op disabled ">
+            <div class="sound">Kick</div>
+        </div>
+        <div data-key="71" data-col="1" class="key op disabled ">
+            <div class="sound">OpenHat</div>
+        </div>
+        <div data-key="72" data-col="1" class="key op disabled ">
+            <div class="sound">Ride</div>
+        </div>
+        <div data-key="74" data-col="1" class="key op disabled ">
+            <div class="sound">Snare</div>
+        </div>
+        <div data-key="75" data-col="1" class="key op disabled ">
+            <div class="sound">Tink</div>
+        </div>
+        <div data-key="76" data-col="1" class="key op disabled ">
+            <div class="sound">Tom</div>
+        </div>
 
-        <div data-key="65"  data-col="2" class="key op disabled ">  <div class="sound">Boom</div> </div>
-        <div data-key="83"  data-col="2" class="key op disabled ">   <div class="sound">Clap</div> </div>
-        <div data-key="68"  data-col="2" class="key op disabled ">  <div class="sound">Hihat</div> </div>
-        <div data-key="70"  data-col="2" class="key op disabled ">  <div class="sound">Kick</div> </div>
-        <div data-key="71"  data-col="2" class="key op disabled ">  <div class="sound">OpenHat</div> </div>
-        <div data-key="72"  data-col="2" class="key op disabled ">  <div class="sound">Ride</div> </div>
-        <div data-key="74"  data-col="2" class="key op disabled ">  <div class="sound">Snare</div> </div>
-        <div data-key="75"  data-col="2" class="key op disabled ">  <div class="sound">Tink</div> </div>
-        <div data-key="76"  data-col="2" class="key op disabled ">  <div class="sound">Tom</div> </div>
+        <div data-key="65" data-col="2" class="key op disabled ">
+            <div class="sound">Boom</div>
+        </div>
+        <div data-key="83" data-col="2" class="key op disabled ">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" data-col="2" class="key op disabled ">
+            <div class="sound">Hihat</div>
+        </div>
+        <div data-key="70" data-col="2" class="key op disabled ">
+            <div class="sound">Kick</div>
+        </div>
+        <div data-key="71" data-col="2" class="key op disabled ">
+            <div class="sound">OpenHat</div>
+        </div>
+        <div data-key="72" data-col="2" class="key op disabled ">
+            <div class="sound">Ride</div>
+        </div>
+        <div data-key="74" data-col="2" class="key op disabled ">
+            <div class="sound">Snare</div>
+        </div>
+        <div data-key="75" data-col="2" class="key op disabled ">
+            <div class="sound">Tink</div>
+        </div>
+        <div data-key="76" data-col="2" class="key op disabled ">
+            <div class="sound">Tom</div>
+        </div>
 
-        <div data-key="65" data-col="3"  class="key op disabled ">  <div class="sound">Boom</div> </div>
-        <div data-key="83" data-col="3"  class="key op disabled ">   <div class="sound">Clap</div> </div>
-        <div data-key="68" data-col="3"  class="key op disabled ">  <div class="sound">Hihat</div> </div>
-        <div data-key="70" data-col="3"  class="key op disabled ">  <div class="sound">Kick</div> </div>
-        <div data-key="71" data-col="3"  class="key op disabled ">  <div class="sound">OpenHat</div> </div>
-        <div data-key="72" data-col="3"  class="key op disabled ">  <div class="sound">Ride</div> </div>
-        <div data-key="74" data-col="3"  class="key op disabled ">  <div class="sound">Snare</div> </div>
-        <div data-key="75" data-col="3"  class="key op disabled ">  <div class="sound">Tink</div> </div>
-        <div data-key="76" data-col="3"  class="key op disabled ">  <div class="sound">Tom</div> </div>
-        
-        <div data-key="65" data-col="4"  class="key op disabled ">  <div class="sound">Boom</div> </div>
-        <div data-key="83" data-col="4"  class="key op disabled ">   <div class="sound">Clap</div> </div>
-        <div data-key="68" data-col="4"  class="key op disabled ">  <div class="sound">Hihat</div> </div>
-        <div data-key="70" data-col="4"  class="key op disabled ">  <div class="sound">Kick</div> </div>
-        <div data-key="71" data-col="4"  class="key op disabled ">  <div class="sound">OpenHat</div> </div>
-        <div data-key="72" data-col="4"  class="key op disabled ">  <div class="sound">Ride</div> </div>
-        <div data-key="74" data-col="4"  class="key op disabled ">  <div class="sound">Snare</div> </div>
-        <div data-key="75" data-col="4"  class="key op disabled ">  <div class="sound">Tink</div> </div>
-        <div data-key="76" data-col="4"  class="key op disabled ">  <div class="sound">Tom</div> </div>
+        <div data-key="65" data-col="3" class="key op disabled ">
+            <div class="sound">Boom</div>
+        </div>
+        <div data-key="83" data-col="3" class="key op disabled ">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" data-col="3" class="key op disabled ">
+            <div class="sound">Hihat</div>
+        </div>
+        <div data-key="70" data-col="3" class="key op disabled ">
+            <div class="sound">Kick</div>
+        </div>
+        <div data-key="71" data-col="3" class="key op disabled ">
+            <div class="sound">OpenHat</div>
+        </div>
+        <div data-key="72" data-col="3" class="key op disabled ">
+            <div class="sound">Ride</div>
+        </div>
+        <div data-key="74" data-col="3" class="key op disabled ">
+            <div class="sound">Snare</div>
+        </div>
+        <div data-key="75" data-col="3" class="key op disabled ">
+            <div class="sound">Tink</div>
+        </div>
+        <div data-key="76" data-col="3" class="key op disabled ">
+            <div class="sound">Tom</div>
+        </div>
 
-        <div data-key="65" data-col="5"  class="key op disabled ">  <div class="sound">Boom</div> </div>
-        <div data-key="83" data-col="5"  class="key op disabled ">   <div class="sound">Clap</div> </div>
-        <div data-key="68" data-col="5"  class="key op disabled ">  <div class="sound">Hihat</div> </div>
-        <div data-key="70" data-col="5"  class="key op disabled ">  <div class="sound">Kick</div> </div>
-        <div data-key="71" data-col="5"  class="key op disabled ">  <div class="sound">OpenHat</div> </div>
-        <div data-key="72" data-col="5"  class="key op disabled ">  <div class="sound">Ride</div> </div>
-        <div data-key="74" data-col="5"  class="key op disabled ">  <div class="sound">Snare</div> </div>
-        <div data-key="75" data-col="5"  class="key op disabled ">  <div class="sound">Tink</div> </div>
-        <div data-key="76" data-col="5"  class="key op disabled ">  <div class="sound">Tom</div> </div>
+        <div data-key="65" data-col="4" class="key op disabled ">
+            <div class="sound">Boom</div>
+        </div>
+        <div data-key="83" data-col="4" class="key op disabled ">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" data-col="4" class="key op disabled ">
+            <div class="sound">Hihat</div>
+        </div>
+        <div data-key="70" data-col="4" class="key op disabled ">
+            <div class="sound">Kick</div>
+        </div>
+        <div data-key="71" data-col="4" class="key op disabled ">
+            <div class="sound">OpenHat</div>
+        </div>
+        <div data-key="72" data-col="4" class="key op disabled ">
+            <div class="sound">Ride</div>
+        </div>
+        <div data-key="74" data-col="4" class="key op disabled ">
+            <div class="sound">Snare</div>
+        </div>
+        <div data-key="75" data-col="4" class="key op disabled ">
+            <div class="sound">Tink</div>
+        </div>
+        <div data-key="76" data-col="4" class="key op disabled ">
+            <div class="sound">Tom</div>
+        </div>
 
-        <div data-key="65" data-col="6"  class="key op disabled ">  <div class="sound">Boom</div> </div>
-        <div data-key="83" data-col="6"  class="key op disabled ">   <div class="sound">Clap</div> </div>
-        <div data-key="68" data-col="6"  class="key op disabled ">  <div class="sound">Hihat</div> </div>
-        <div data-key="70" data-col="6"  class="key op disabled ">  <div class="sound">Kick</div> </div>
-        <div data-key="71" data-col="6"  class="key op disabled ">  <div class="sound">OpenHat</div> </div>
-        <div data-key="72" data-col="6"  class="key op disabled ">  <div class="sound">Ride</div> </div>
-        <div data-key="74" data-col="6"  class="key op disabled ">  <div class="sound">Snare</div> </div>
-        <div data-key="75" data-col="6"  class="key op disabled ">  <div class="sound">Tink</div> </div>
-        <div data-key="76" data-col="6"  class="key op disabled ">  <div class="sound">Tom</div> </div>
+        <div data-key="65" data-col="5" class="key op disabled ">
+            <div class="sound">Boom</div>
+        </div>
+        <div data-key="83" data-col="5" class="key op disabled ">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" data-col="5" class="key op disabled ">
+            <div class="sound">Hihat</div>
+        </div>
+        <div data-key="70" data-col="5" class="key op disabled ">
+            <div class="sound">Kick</div>
+        </div>
+        <div data-key="71" data-col="5" class="key op disabled ">
+            <div class="sound">OpenHat</div>
+        </div>
+        <div data-key="72" data-col="5" class="key op disabled ">
+            <div class="sound">Ride</div>
+        </div>
+        <div data-key="74" data-col="5" class="key op disabled ">
+            <div class="sound">Snare</div>
+        </div>
+        <div data-key="75" data-col="5" class="key op disabled ">
+            <div class="sound">Tink</div>
+        </div>
+        <div data-key="76" data-col="5" class="key op disabled ">
+            <div class="sound">Tom</div>
+        </div>
 
-        <div data-key="65" data-col="7"  class="key op disabled ">  <div class="sound">Boom</div> </div>
-        <div data-key="83" data-col="7"  class="key op disabled ">   <div class="sound">Clap</div> </div>
-        <div data-key="68" data-col="7"  class="key op disabled ">  <div class="sound">Hihat</div> </div>
-        <div data-key="70" data-col="7"  class="key op disabled ">  <div class="sound">Kick</div> </div>
-        <div data-key="71" data-col="7"  class="key op disabled ">  <div class="sound">OpenHat</div> </div>
-        <div data-key="72" data-col="7"  class="key op disabled ">  <div class="sound">Ride</div> </div>
-        <div data-key="74" data-col="7"  class="key op disabled ">  <div class="sound">Snare</div> </div>
-        <div data-key="75" data-col="7"  class="key op disabled ">  <div class="sound">Tink</div> </div>
-        <div data-key="76" data-col="7"  class="key op disabled ">  <div class="sound">Tom</div> </div>
+        <div data-key="65" data-col="6" class="key op disabled ">
+            <div class="sound">Boom</div>
+        </div>
+        <div data-key="83" data-col="6" class="key op disabled ">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" data-col="6" class="key op disabled ">
+            <div class="sound">Hihat</div>
+        </div>
+        <div data-key="70" data-col="6" class="key op disabled ">
+            <div class="sound">Kick</div>
+        </div>
+        <div data-key="71" data-col="6" class="key op disabled ">
+            <div class="sound">OpenHat</div>
+        </div>
+        <div data-key="72" data-col="6" class="key op disabled ">
+            <div class="sound">Ride</div>
+        </div>
+        <div data-key="74" data-col="6" class="key op disabled ">
+            <div class="sound">Snare</div>
+        </div>
+        <div data-key="75" data-col="6" class="key op disabled ">
+            <div class="sound">Tink</div>
+        </div>
+        <div data-key="76" data-col="6" class="key op disabled ">
+            <div class="sound">Tom</div>
+        </div>
 
-        <div data-key="65" data-col="8"  class="key op disabled ">  <div class="sound">Boom</div> </div>
-        <div data-key="83" data-col="8"  class="key op disabled ">   <div class="sound">Clap</div> </div>
-        <div data-key="68" data-col="8"  class="key op disabled ">  <div class="sound">Hihat</div> </div>
-        <div data-key="70" data-col="8"  class="key op disabled ">  <div class="sound">Kick</div> </div>
-        <div data-key="71" data-col="8"  class="key op disabled ">  <div class="sound">OpenHat</div> </div>
-        <div data-key="72" data-col="8"  class="key op disabled ">  <div class="sound">Ride</div> </div>
-        <div data-key="74" data-col="8"  class="key op disabled ">  <div class="sound">Snare</div> </div>
-        <div data-key="75" data-col="8"  class="key op disabled ">  <div class="sound">Tink</div> </div>
-        <div data-key="76" data-col="8"  class="key op disabled ">  <div class="sound">Tom</div> </div>
-        
+        <div data-key="65" data-col="7" class="key op disabled ">
+            <div class="sound">Boom</div>
+        </div>
+        <div data-key="83" data-col="7" class="key op disabled ">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" data-col="7" class="key op disabled ">
+            <div class="sound">Hihat</div>
+        </div>
+        <div data-key="70" data-col="7" class="key op disabled ">
+            <div class="sound">Kick</div>
+        </div>
+        <div data-key="71" data-col="7" class="key op disabled ">
+            <div class="sound">OpenHat</div>
+        </div>
+        <div data-key="72" data-col="7" class="key op disabled ">
+            <div class="sound">Ride</div>
+        </div>
+        <div data-key="74" data-col="7" class="key op disabled ">
+            <div class="sound">Snare</div>
+        </div>
+        <div data-key="75" data-col="7" class="key op disabled ">
+            <div class="sound">Tink</div>
+        </div>
+        <div data-key="76" data-col="7" class="key op disabled ">
+            <div class="sound">Tom</div>
+        </div>
+
+        <div data-key="65" data-col="8" class="key op disabled ">
+            <div class="sound">Boom</div>
+        </div>
+        <div data-key="83" data-col="8" class="key op disabled ">
+            <div class="sound">Clap</div>
+        </div>
+        <div data-key="68" data-col="8" class="key op disabled ">
+            <div class="sound">Hihat</div>
+        </div>
+        <div data-key="70" data-col="8" class="key op disabled ">
+            <div class="sound">Kick</div>
+        </div>
+        <div data-key="71" data-col="8" class="key op disabled ">
+            <div class="sound">OpenHat</div>
+        </div>
+        <div data-key="72" data-col="8" class="key op disabled ">
+            <div class="sound">Ride</div>
+        </div>
+        <div data-key="74" data-col="8" class="key op disabled ">
+            <div class="sound">Snare</div>
+        </div>
+        <div data-key="75" data-col="8" class="key op disabled ">
+            <div class="sound">Tink</div>
+        </div>
+        <div data-key="76" data-col="8" class="key op disabled ">
+            <div class="sound">Tom</div>
+        </div>
+
     </div>
 
 
@@ -128,8 +293,9 @@
     <audio preload="auto" data-key="76" src="sounds/tom.wav"></audio>
 
 
-    <script src="drum2.js"></script>
+    <script src="app.js"></script>
 
 
 </body>
+
 </html>
