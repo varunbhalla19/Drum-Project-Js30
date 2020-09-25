@@ -27,6 +27,10 @@ body{
 
 }
 
+.white-txt{
+    color: white;
+}
+
 .key{
     padding: 0.5rem;
     /* width: 90px  ; */
